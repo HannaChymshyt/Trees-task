@@ -22,4 +22,11 @@ class BinaryTree {
         }
     }
 
+    public void preOrderTraversal(Node node) {
+        if (node != null) {
+            System.out.print(" " + node.key);
+            preOrderTraversal(node.left);
+            preOrderTraversal(node.right);
+        }
+    }
 }
