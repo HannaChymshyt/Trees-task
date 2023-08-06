@@ -21,6 +21,14 @@ class BinaryTree {
         tree.root.left.right.right = new Node(11);
         tree.root.right.left.left = new Node(20);
 
+
+        System.out.print("\nInorder traversal: ");
+        tree.inOrderTraversal(tree.root);
+        System.out.print("\nPreorder traversal: ");
+        tree.preOrderTraversal(tree.root);
+        System.out.print("\nPostorder traversal: ");
+        tree.postOrderTraversal(tree.root);
+
     }
 
     BinaryTree() {
