@@ -29,4 +29,12 @@ class BinaryTree {
             preOrderTraversal(node.right);
         }
     }
+
+    public void postOrderTraversal(Node node) {
+        if (node != null) {
+            postOrderTraversal(node.left);
+            postOrderTraversal(node.right);
+            System.out.print(" " + node.key);
+        }
+    }
 }
